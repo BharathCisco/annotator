@@ -25,10 +25,24 @@ Useful for legacy codebases with missing annotations.
 ## Conclusion
 Since we're working on a **Dynamic Annotator**, which needs a balance of static and runtime analysis:
 
-1. **Use MonkeyType**
-   - It records function call arguments and return types dynamically.
-   - You can then apply its suggested annotations to the source code.
+### 1. mypy (Static Type Checking)
 
-2. **Integrate mypy for static checking**
-   - After applying inferred annotations, `mypy` ensures correctness.
+🔹 **Why?**
+- It verifies type correctness without running the code.
+- Detects type mismatches, ensuring safer refactoring and fewer runtime errors.
+- Helps catch edge cases that MonkeyType might miss.
 
+🔹 **How it works?**
+- Once type annotations are added (manually or using MonkeyType), mypy validates them.
+- Flags incorrect type usages, making the code more robust and maintainable.
+
+### 2. MonkeyType (Runtime Type Inference)
+
+🔹 **Why?**
+- It dynamically tracks function calls and records actual types used at runtime.
+- Useful for legacy codebases where annotations are missing.
+- Reduces manual effort in adding type hints.
+
+🔹 **How it works?**
+- It runs the application and logs function arguments and return types.
+- Generates suggested type annotations based on collected runtime data.
