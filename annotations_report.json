@@ -1,0 +1,46 @@
+{
+    "C:\\Users\\bhamahad\\PycharmProjects\\Annotator\\test\\demo.py": {
+        "__builtins__": [
+            "dict"
+        ],
+        "add_numbers": [
+            "function"
+        ],
+        "greet": [
+            "function"
+        ],
+        "process_data": [
+            "function"
+        ],
+        "factorial": [
+            "function"
+        ],
+        "find_max": [
+            "function"
+        ],
+        "reverse_string": [
+            "function"
+        ],
+        "fibonacci": [
+            "function"
+        ],
+        "word_count": [
+            "function"
+        ],
+        "is_palindrome": [
+            "function"
+        ],
+        "sum_of_squares": [
+            "function"
+        ],
+        "sort_list": [
+            "function"
+        ],
+        "count_vowels": [
+            "function"
+        ],
+        "gcd": [
+            "function"
+        ]
+    }
+}
